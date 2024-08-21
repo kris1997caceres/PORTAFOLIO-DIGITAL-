@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #50b3a2;
+            color: white;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #e8491d 3px solid;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header ul li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        header a:hover {
+            color: #ffffff;
+            font-weight: bold;
+        }
+        .section {
+            padding: 20px;
+            background: #ffffff;
+            margin-bottom: 20px;
+        }
+        footer {
+            background: #50b3a2;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1><span class="highlight">Portafolio</span> Personal</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Inicio</a></li>
+                    <li><a href="#about">Acerca de</a></li>
+                    <li><a href="#skills">Habilidades</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section" id="about">
+        <div class="container">
+            <h2>Acerca de mí</h2>
+            <p>Soy Kristian Santiago Caceres Castro.
+                actualmente Pasante de la carrera Ingenieria en Infotecnologia 
+                Soy Egresado del Instituto Santa Clara de La Ciudad de La Paz de la Carrera Bachillerato Tecnico Profecional en Informatica
+
+                    Cuento con dos certificados por parte del Estado de Honduras donde me acreditan la certificacion en Programacion en Pyton      <a href="img/img1.jpeg">     Ver Imagen     </a>
+                    y Fabricacion digital en 3D          <a href="img/img2.jpeg">         Ver Imagen    </a>
+                   
+            </p>
+        </div>
+    </section>
+
+    <section class="section" id="skills">
+        <div class="container">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Programacion.</li>
+                <li>Redes</li>
+                <li>Seguridad</li>
+                <li>Mantenimiento y Reparacion de equipos </li>
+                <li>Git</li>
+                <li>Diseño UI/UX</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section" id="projects">
+        <div class="container">
+            <h2>Proyectos</h2>
+            <div class="project">
+                <h3>Proyecto 1: Aplicación de Tareas</h3>
+                <p>En este proyecto doy a conocer la implementacion y desarrollo de lo que es un pequeño sistema policial para la ciberseguridad.</p>
+                <a href="https://github.com/kris1997caceres/Avance-de-proyecto-Ingenieria-de-Software">Ver proyecto </a>
+            </div>
+            <div class="project">
+                <h3>Proyecto 2: Juego tetris </h3>
+                <p>En este proyecto doy a conocer el desarrollo del juego con sus comandos y su estructura funcional.</p>
+                <a href="https://github.com/kris1997caceres/juego-tetris">Ver proyecto</a>
+            </div>
+
+            <div class="project">
+                <h3>Proyecto 3: Pagina Comercial </h3>
+                <p>En este proyecto doy a conocer el desarrollo sobre una pagina comercial de un depocito de pan donde se creo la publicidad.</p>
+                <a href="https://github.com/kris1997caceres/Pagina-comercial">Ver proyecto</a>
+            </div>
+            <!-- Agrega más proyectos aquí -->
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <div class="container">
+            <h2>Contacto</h2>
+            <p>Si estás interesado en colaborar o tienes alguna pregunta, no dudes en contactarme.</p>
+            <form action="https://formspree.io/f/{your_form_id}" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portafolio Personal Kristian Santiago Caceres Catros UJCV</p>
+    </footer>
+</body>
+</html>
